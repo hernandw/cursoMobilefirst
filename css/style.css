@@ -81,7 +81,7 @@ html {
     background-color: var(--just-white);
     position: absolute;
     left: calc(50% - 118px);
-    bottom: 280px;
+    top: 315px;
     text-decoration: none;
     line-height: 18px;
     font-family: DM Sans;
@@ -103,4 +103,61 @@ html {
     background-image: url(../assets/icons/down-arrow.svg);
     background-position: 0;
     background-repeat: no-repeat;
+}
+
+/* Section del Bitcoin */
+
+.container {
+    width: 100%;
+    
+}
+.container_bitcoin {
+    background: var(--off-white);
+    width: 100%;
+    
+}
+
+.container .image{
+    margin: 0 auto;
+    padding-top: 40px;
+    background-image: url(../assets/img/bitcoin.svg);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container_bitcoin__tabla {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    margin: 10px auto;
+    
+}
+
+.container_bitcoin h2 {
+    text-align: center;
+    padding: 10px;
+    font-family: "DM sans";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.4rem;
+    line-height: 26px;
+
+}
+.container_bitcoin p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #757575;
+    border-bottom: 80px;
+    
+}
+
+.container_bitcoin .naranja {
+    color: var(--bitcoin-orange);
+    font-size: 1.8rem;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
 }
