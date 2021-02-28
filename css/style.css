@@ -128,22 +128,16 @@ html {
     background-repeat: no-repeat;
 }
 
-.container_bitcoin__tabla {
-    display: grid;
-    grid-template-columns: repeat(2, 100px);
-    margin: 10px auto;
-    
-}
 
 .container_bitcoin h2 {
-    text-align: center;
+    text-align: left;
     padding: 10px;
     font-family: "DM sans";
     font-weight: 700;
     font-style: normal;
     font-size: 2.4rem;
     line-height: 26px;
-
+    
 }
 .container_bitcoin p {
     text-align: center;
@@ -151,6 +145,8 @@ html {
     font-size: 1.4rem;
     color: #757575;
     border-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     
 }
 
@@ -160,4 +156,45 @@ html {
     display: block;
     margin-top: 30px;
     text-align: center;
+    width: 200px;
 }
+
+/* Tabla de la sección Bitcoin */
+
+.container_bitcoin__tabla {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 300px));
+    grid-template-rows: repeat(4, 40px);
+    margin: 10px auto;
+    width: 70%;
+    gap: 2px;
+    justify-content: center;
+    font-family: "Inter, San-serifS";
+    
+}
+
+.valor {
+    background: #fff;
+    padding: 10px 12px;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 500;
+    color: #B5B0AC;
+    font-size: 1.6rem;
+}
+
+.hora span{
+    background: var(--soft-orange);
+    display: inline-block;
+    height: 30px;
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 64px;
+}
+
+.hora {
+    text-align: center;
+}
+
