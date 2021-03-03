@@ -169,9 +169,7 @@ html {
 
 /* Tabla de la sección Bitcoin */
  
-.container_bitcoin_slider {
-    /* display: flex; */
-}
+
 
 .container_bitcoin__tabla {
     display: grid;
@@ -222,9 +220,12 @@ html {
 
 /* Tabla de Noticias */
 
-
 .container_noticias {
+    width: 100%;
     background: #201E1C;
+}
+
+.container_noticias_main {
     color: white;
     width: 100%;
     padding: 46px 15px;
@@ -377,12 +378,12 @@ margin: 0 auto;
 
 .container_card_slider {
     display: flex;
-    overflow-x: scroll;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     overscroll-behavior-x: contain;
-    scroll-snap-align: x proximity;
-    justify-content: center;
-}
+    scroll-snap-type: x proximity;
+    height: 316px;
+} 
 
 .container_precios_title {
     padding-top: 65px;
